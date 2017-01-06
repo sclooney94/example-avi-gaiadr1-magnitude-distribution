@@ -132,7 +132,7 @@ class ProcessData(AviTask):
         t = Table.read(self.input().path, format='votable')
 
 
-        fig = plt.figure(1, figsize=[30,15])
+        fig = plt.figure(1, figsize=[20,10])
         
         plt.hist(t['phot_g_mean_mag'], bins=50, facecolor='g', alpha=0.75)
         plt.xlabel('magnitude')
