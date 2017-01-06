@@ -13,11 +13,8 @@
         
         <label for="query">GACS GDR1 VOTable query</label>
         <textarea class="form-control" id="query" name="query" placeholder="Enter your query here" rows="3" required=true>
-SELECT floor(ra/5.000000)*5.000000 as ra_floor,
-                 floor(dec/5.000000)*5.000000 as dec_floor,
-                 count(*) as nb
+SELECT phot_g_mean_mag
           FROM "I/337/tgas"
-          GROUP BY 1,2
         </textarea>
         
         <label for="outfile">Output file</label>
